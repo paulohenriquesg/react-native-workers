@@ -1,5 +1,6 @@
 #import "WorkerManager.h"
 #import "WorkerSelfManager.h"
+#import "WorkerBridge.h"
 #include <stdlib.h>
 #import "RCTBridge.h"
 #import "RCTBridge+Private.h"
@@ -29,7 +30,7 @@ RCT_REMAP_METHOD(startWorker,
   NSLog(@"starting Worker %@", [workerURL absoluteString]);
 
 
-   RCTBridge *workerBridge = [[RCTBridge alloc] initWithBundleURL:workerURL
+   RCTBridge *workerBridge = [[RCTWorkerBridge alloc] initWithBundleURL:workerURL
                                             moduleProvider:nil
                                              launchOptions:nil];
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9F97657B1CDC88260091EE06 /* WorkerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F9765771CDC88260091EE06 /* WorkerManager.m */; };
 		9F97657C1CDC88260091EE06 /* WorkerSelfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F97657A1CDC88260091EE06 /* WorkerSelfManager.m */; };
+		F613D3231D7AB104004946C2 /* WorkerBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = F613D3221D7AB104004946C2 /* WorkerBridge.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		9F9765781CDC88260091EE06 /* WorkerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerManager.h; sourceTree = "<group>"; };
 		9F9765791CDC88260091EE06 /* WorkerSelfManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WorkerSelfManager.h; sourceTree = "<group>"; };
 		9F97657A1CDC88260091EE06 /* WorkerSelfManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkerSelfManager.m; sourceTree = "<group>"; };
+		F613D3221D7AB104004946C2 /* WorkerBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WorkerBridge.m; sourceTree = "<group>"; };
+		F613D3241D7AB123004946C2 /* WorkerBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkerBridge.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				9F9765781CDC88260091EE06 /* WorkerManager.h */,
 				9F9765791CDC88260091EE06 /* WorkerSelfManager.h */,
 				9F97657A1CDC88260091EE06 /* WorkerSelfManager.m */,
+				F613D3221D7AB104004946C2 /* WorkerBridge.m */,
+				F613D3241D7AB123004946C2 /* WorkerBridge.h */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -125,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F613D3231D7AB104004946C2 /* WorkerBridge.m in Sources */,
 				9F97657C1CDC88260091EE06 /* WorkerSelfManager.m in Sources */,
 				9F97657B1CDC88260091EE06 /* WorkerManager.m in Sources */,
 			);
