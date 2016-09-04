@@ -5,6 +5,10 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
 
+import java.util.HashMap;
+import java.util.Map;
+import javax.annotation.Nullable;
+
 public class WorkerSelfModule extends ReactContextBaseJavaModule {
 
     private int workerId;
@@ -17,6 +21,13 @@ public class WorkerSelfModule extends ReactContextBaseJavaModule {
     public void initialize(int workerId, ReactApplicationContext parentContext) {
         this.parentContext = parentContext;
         this.workerId = workerId;
+    }
+
+    @Override
+    public @Nullable Map<String, Object> getConstants() {
+      HashMap<String, Object> constants = new HashMap<String, Object>();
+      constants.put("inWorker", parentContext == null ? 0 : 1);
+      return constants;
     }
 
     @Override

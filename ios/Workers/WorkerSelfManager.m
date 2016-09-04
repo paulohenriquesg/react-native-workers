@@ -25,4 +25,9 @@ RCT_EXPORT_METHOD(postMessage: (NSString *)message)
                                                body:message];
 }
 
+- (NSDictionary *)constantsToExport
+{
+    return @{ @"inWorker": @(self.parentBridge != nil) };
+}
+
 @end
