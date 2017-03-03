@@ -1,8 +1,8 @@
 #import "WorkerSelfManager.h"
 #include <stdlib.h>
-#import "RCTBridge.h"
-#import "RCTBridge+Private.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTBridge.h>
+#import <React/RCTBridge+Private.h>
+#import <React/RCTEventDispatcher.h>
 
 @implementation WorkerSelfManager
 

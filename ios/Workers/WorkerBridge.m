@@ -1,7 +1,7 @@
 
 #import "WorkerBridge.h"
-#import "RCTDevMenu.h"
-#import "RCTJSCExecutor.h"
+#import <React/RCTDevMenu.h>
+#import <React/RCTJSCExecutor.h>
 
 @implementation RCTWorkerBridge
 
